@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "99a864e5-5bbd-46fa-a85e-54131fe65d7d",
+		"name": "Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24332578"
+	},
+	"item": [
+		{
+			"name": "create a board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=project2&key=d5739f142fcdb6e831c24f2235415a3f&token=ATTAaec6d9087add679f26d9c276e47394d11d54e2b8d721e489bf36af6c6fa561779EE91781",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "project2"
+						},
+						{
+							"key": "key",
+							"value": "d5739f142fcdb6e831c24f2235415a3f"
+						},
+						{
+							"key": "token",
+							"value": "ATTAaec6d9087add679f26d9c276e47394d11d54e2b8d721e489bf36af6c6fa561779EE91781"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete a board",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/xqRvv6du?key=d5739f142fcdb6e831c24f2235415a3f&token=ATTAaec6d9087add679f26d9c276e47394d11d54e2b8d721e489bf36af6c6fa561779EE91781",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"xqRvv6du"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "d5739f142fcdb6e831c24f2235415a3f"
+						},
+						{
+							"key": "token",
+							"value": "ATTAaec6d9087add679f26d9c276e47394d11d54e2b8d721e489bf36af6c6fa561779EE91781"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update a board",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"63b3c8d69a475f04c0d8c8a2\",\r\n    \"name\": \"sat_project\",\r\n    \"desc\": \"\",\r\n    \"descData\": null,\r\n    \"closed\": false,\r\n    \"idOrganization\": \"636c8423de52ed0043bdd977\",\r\n    \"idEnterprise\": null,\r\n    \"pinned\": false,\r\n    \"url\": \"https://trello.com/b/pHt4SG8O/moolya01\",\r\n    \"shortUrl\": \"https://trello.com/b/pHt4SG8O\",\r\n    \"prefs\": {\r\n        \"permissionLevel\": \"org\",\r\n        \"hideVotes\": false,\r\n        \"voting\": \"disabled\",\r\n        \"comments\": \"members\",\r\n        \"invitations\": \"members\",\r\n        \"selfJoin\": true,\r\n        \"cardCovers\": true,\r\n        \"isTemplate\": false,\r\n        \"cardAging\": \"regular\",\r\n        \"calendarFeedEnabled\": false,\r\n        \"hiddenPluginBoardButtons\": [],\r\n        \"switcherViews\": [\r\n            {\r\n                \"_id\": \"63b3c8d69a475f04c0d8c8a3\",\r\n                \"viewType\": \"Board\",\r\n                \"enabled\": true\r\n            },\r\n            {\r\n                \"_id\": \"63b3c8d69a475f04c0d8c8a4\",\r\n                \"viewType\": \"Table\",\r\n                \"enabled\": true\r\n            },\r\n            {\r\n                \"_id\": \"63b3c8d69a475f04c0d8c8a5\",\r\n                \"viewType\": \"Calendar\",\r\n                \"enabled\": false\r\n            },\r\n            {\r\n                \"_id\": \"63b3c8d69a475f04c0d8c8a6\",\r\n                \"viewType\": \"Dashboard\",\r\n                \"enabled\": false\r\n            },\r\n            {\r\n                \"_id\": \"63b3c8d69a475f04c0d8c8a7\",\r\n                \"viewType\": \"Timeline\",\r\n                \"enabled\": false\r\n            },\r\n            {\r\n                \"_id\": \"63b3c8d69a475f04c0d8c8a8\",\r\n                \"viewType\": \"Map\",\r\n                \"enabled\": false\r\n            }\r\n        ],\r\n        \"background\": \"63b3c2b2eb0cc603cb672a11\",\r\n        \"backgroundColor\": null,\r\n        \"backgroundImage\": \"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/original/bc47a71b22940a8fe2ae994490c3a586/photo-1672659878782-5862ce1d70d1\",\r\n        \"backgroundImageScaled\": [\r\n            {\r\n                \"width\": 70,\r\n                \"height\": 100,\r\n                \"url\": \"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/70x100/dc6c4567ea8ea32bd35a31ad028d406b/photo-1672659878782-5862ce1d70d1.jpg\"\r\n            },\r\n            {\r\n                \"width\": 135,\r\n                \"height\": 192,\r\n                \"url\": \"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/135x192/dc6c4567ea8ea32bd35a31ad028d406b/photo-1672659878782-5862ce1d70d1.jpg\"\r\n            },\r\n            {\r\n                \"width\": 338,\r\n                \"height\": 480,\r\n                \"url\": \"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/338x480/dc6c4567ea8ea32bd35a31ad028d406b/photo-1672659878782-5862ce1d70d1.jpg\"\r\n            },\r\n            {\r\n                \"width\": 676,\r\n                \"height\": 960,\r\n                \"url\": \"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/676x960/dc6c4567ea8ea32bd35a31ad028d406b/photo-1672659878782-5862ce1d70d1.jpg\"\r\n            },\r\n            {\r\n                \"width\": 721,\r\n                \"height\": 1024,\r\n                \"url\": \"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/721x1024/dc6c4567ea8ea32bd35a31ad028d406b/photo-1672659878782-5862ce1d70d1.jpg\"\r\n            },\r\n            {\r\n                \"width\": 901,\r\n                \"height\": 1280,\r\n                \"url\": \"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/901x1280/dc6c4567ea8ea32bd35a31ad028d406b/photo-1672659878782-5862ce1d70d1.jpg\"\r\n            },\r\n            {\r\n                \"width\": 1127,\r\n                \"height\": 1600,\r\n                \"url\": \"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/1127x1600/dc6c4567ea8ea32bd35a31ad028d406b/photo-1672659878782-5862ce1d70d1.jpg\"\r\n            },\r\n            {\r\n                \"width\": 1352,\r\n                \"height\": 1920,\r\n                \"url\": \"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/1352x1920/dc6c4567ea8ea32bd35a31ad028d406b/photo-1672659878782-5862ce1d70d1.jpg\"\r\n            },\r\n            {\r\n                \"width\": 1442,\r\n                \"height\": 2048,\r\n                \"url\": \"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/original/bc47a71b22940a8fe2ae994490c3a586/photo-1672659878782-5862ce1d70d1\"\r\n            }\r\n        ],\r\n        \"backgroundTile\": false,\r\n        \"backgroundBrightness\": \"dark\",\r\n        \"backgroundBottomColor\": \"#13131b\",\r\n        \"backgroundTopColor\": \"#1c245b\",\r\n        \"canBePublic\": true,\r\n        \"canBeEnterprise\": true,\r\n        \"canBeOrg\": true,\r\n        \"canBePrivate\": true,\r\n        \"canInvite\": true\r\n    },\r\n    \"labelNames\": {\r\n        \"green\": \"\",\r\n        \"yellow\": \"\",\r\n        \"orange\": \"\",\r\n        \"red\": \"\",\r\n        \"purple\": \"\",\r\n        \"blue\": \"\",\r\n        \"sky\": \"\",\r\n        \"lime\": \"\",\r\n        \"pink\": \"\",\r\n        \"black\": \"\",\r\n        \"green_dark\": \"\",\r\n        \"yellow_dark\": \"\",\r\n        \"orange_dark\": \"\",\r\n        \"red_dark\": \"\",\r\n        \"purple_dark\": \"\",\r\n        \"blue_dark\": \"\",\r\n        \"sky_dark\": \"\",\r\n        \"lime_dark\": \"\",\r\n        \"pink_dark\": \"\",\r\n        \"black_dark\": \"\",\r\n        \"green_light\": \"\",\r\n        \"yellow_light\": \"\",\r\n        \"orange_light\": \"\",\r\n        \"red_light\": \"\",\r\n        \"purple_light\": \"\",\r\n        \"blue_light\": \"\",\r\n        \"sky_light\": \"\",\r\n        \"lime_light\": \"\",\r\n        \"pink_light\": \"\",\r\n        \"black_light\": \"\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.trello.com/1/boards/pHt4SG8O?key=d5739f142fcdb6e831c24f2235415a3f&token=ATTAaec6d9087add679f26d9c276e47394d11d54e2b8d721e489bf36af6c6fa561779EE91781",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"pHt4SG8O"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "d5739f142fcdb6e831c24f2235415a3f"
+						},
+						{
+							"key": "token",
+							"value": "ATTAaec6d9087add679f26d9c276e47394d11d54e2b8d721e489bf36af6c6fa561779EE91781"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a board",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/cfRcHCGH?key=d5739f142fcdb6e831c24f2235415a3f&token=ATTAaec6d9087add679f26d9c276e47394d11d54e2b8d721e489bf36af6c6fa561779EE91781",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"cfRcHCGH"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "d5739f142fcdb6e831c24f2235415a3f"
+						},
+						{
+							"key": "token",
+							"value": "ATTAaec6d9087add679f26d9c276e47394d11d54e2b8d721e489bf36af6c6fa561779EE91781"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a list on board",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/cfRcHCGH/lists?key=d5739f142fcdb6e831c24f2235415a3f&token=ATTAaec6d9087add679f26d9c276e47394d11d54e2b8d721e489bf36af6c6fa561779EE91781",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"cfRcHCGH",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "d5739f142fcdb6e831c24f2235415a3f"
+						},
+						{
+							"key": "token",
+							"value": "ATTAaec6d9087add679f26d9c276e47394d11d54e2b8d721e489bf36af6c6fa561779EE91781"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a list on board",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/cfRcHCGH/lists?name=status&key=d5739f142fcdb6e831c24f2235415a3f&token=ATTAaec6d9087add679f26d9c276e47394d11d54e2b8d721e489bf36af6c6fa561779EE91781",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"cfRcHCGH",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "status"
+						},
+						{
+							"key": "key",
+							"value": "d5739f142fcdb6e831c24f2235415a3f"
+						},
+						{
+							"key": "token",
+							"value": "ATTAaec6d9087add679f26d9c276e47394d11d54e2b8d721e489bf36af6c6fa561779EE91781"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
